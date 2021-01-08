@@ -1,0 +1,62 @@
+$primary: #020d18;
+$primary-lighter: #051d35;
+$primary-darker: #000b15;
+$secondary: #f90f1f;
+$secondary-darker: #c00c18;
+$tertiary: #37a3df;
+$quaternary: #f4b01e;
+$quinary: #df5f37;
+$white: #ffffff;
+$white-darker: #858585;
+$black: rgba(0, 0, 0, 0.6);
+$black-darker: rgba(0, 0, 0, 0.8);
+$gradient: linear-gradient(
+  0deg,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(255, 255, 255, 0) 94%
+);
+
+@mixin logoTxt {
+  font-weight: 900;
+  font-size: 5rem;
+  transition: all 230ms ease-in;
+}
+
+@mixin flexRowSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexRowWrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin flexColumnSpaceAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flexCol-3 {
+  flex: 1 1 33.33333333333333%;
+  max-width: 33.33333333333333%;
+}
+
+@mixin flexCol-4 {
+  flex: 1 1 25%;
+  max-width: 25%;
+}
+
+@mixin flexCol-6 {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+@mixin flexCol-12 {
+  flex: 1 1 100%;
+  max-width: 100%;
+}

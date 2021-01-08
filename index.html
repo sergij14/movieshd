@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Movies HD</title>
+  <meta name="author" content="Sergi J." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="shortcut icon" type="image/png" href="img/ico.png" />
+  <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- ////////////// Header ////////////// -->
+
+  <header id="header">
+    <div class="container">
+      <nav class="nav">
+
+        <!-- ////////////// Menu ////////////// -->
+        <button class="nav__ham-btn"><i class="fas fa-bars"></i></button>
+        <ul class="nav__menu">
+          <li>
+            <a class="nav__link" href="#header">Home</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#trends-now">Trends Now</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#serials">Serials</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#movies">Movies</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#subscribe">Subscription</a>
+          </li>
+        </ul>
+
+        <!-- ////////////// Brand ////////////// -->
+        <h1 class="nav__brand"><a href="/">M</a></h1>
+        <button class="nav__search-btn"><i class="fas fa-search"></i></button>
+
+        <!-- ////////////// Search Form ////////////// -->
+        <div class="nav__search">
+          <form action="/search.php">
+            <input class="nav__search__text" type="text" placeholder="Type a keyword..." name="search">
+          </form>
+        </div>
+      </nav>
+      <!-- ////////////// Slider ////////////// -->
+      <div class="slider">
+        <!-- ////////////// Slide ////////////// -->
+        <div class="slide slide--1">
+          <div class="slide__movie">
+            <div class="slide__movie__btns">
+              <button class="btn btn--light"><i class="fas fa-play"></i>Watch
+                Trailer</button>
+              <a class='btn btn--dark' href="#"><i class="fas fa-plus"></i>Add To List</a>
+            </div>
+            <div class="slide__movie__caption">
+              <div class="slide__movie__tags">
+                <a class="tag tag--color-1" href="#">2012</a>
+                <a class="tag tag--color-2" href="#">Adventure</a>
+                <a class="tag tag--color-3" href="#">Action</a>
+              </div>
+              <h4>The Avengers</h4>
+              <p class="pad-t-1 pad-b-1">Earth's mightiest heroes must come together and learn to fight as a team if
+                they are
+                going to stop the
+                mischievous Loki and his alien army from enslaving humanity. </p>
+            </div>
+            <div class="slide__movie__img">
+              <img src="img/sample-img.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ////////////// Slide ////////////// -->
+        <div class="slide slide--2">
+          <div class="slide__movie">
+            <div class="slide__movie__btns">
+              <button class="btn btn--light"><i class="fas fa-play"></i>Watch
+                Trailer</button>
+              <a class="btn btn--dark" href="#"><i class="fas fa-plus"></i>Add To List</a>
+            </div>
+            <div class="slide__movie__caption">
+              <div class="slide__movie__tags">
+                <a class="tag tag--color-1" href="#">2016</a>
+                <a class="tag tag--color-3" href="#">Action</a>
+              </div>
+              <h4>Doctor Strange</h4>
+              <p class="pad-t-1 pad-b-1">In an accident, Stephen Strange, a famous neurosurgeon, loses the ability to
+                use his hands. He goes to visit the mysterious Ancient One to heal himself and becomes a great sorcerer
+                under her tutelage.</p>
+            </div>
+            <div class="slide__movie__img">
+              <img src="img/sample-img-02.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ////////////// Slide ////////////// -->
+        <div class="slide slide--3">
+          <div class="slide__movie">
+            <div class="slide__movie__btns">
+              <button class="btn btn--light"><i class="fas fa-play"></i>Watch
+                Trailer</button>
+              <a class='btn btn--dark' href="#"><i class="fas fa-plus"></i>Add To List</a>
+            </div>
+            <div class="slide__movie__caption">
+              <div class="slide__movie__tags">
+                <a class="tag tag--color-1" href="#">2012</a>
+                <a class="tag tag--color-2" href="#">Adventure</a>
+                <a class="tag tag--color-3" href="#">Action</a>
+              </div>
+              <h4>The Avengers</h4>
+              <p class="pad-t-1 pad-b-1">Earth's mightiest heroes must come together and learn to fight as a team if
+                they are
+                going to stop the
+                mischievous Loki and his alien army from enslaving humanity. </p>
+            </div>
+            <div class="slide__movie__img">
+              <img src="img/sample-img.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ////////////// Slider Buttons ////////////// -->
+        <div class="slider__btns">
+          <button class="slider__btn slider__btn--left"><i class="fas fa-arrow-left"></i></button>
+          <button class="slider__btn slider__btn--right"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="dots"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- ////////////// blocks ////////////// -->
+      <section class="block mar-t-1" id="trends-now">
+        <h2 class="block__header pad-t-1 pad-b-05">Trends Now</h2>
+        <div class="block__tab-container">
+          <button class="btn block__tab block__tab--1 block__tab--active" data-tab="1">
+            Action
+          </button>
+          <button class="btn block__tab block__tab--2" data-tab="2">
+            Adventure
+          </button>
+          <button class="btn block__tab block__tab--3" data-tab="3">
+            Drama
+          </button>
+          <button class="btn block__tab block__tab--4" data-tab="4">
+            Comedy
+          </button>
+        </div>
+
+        <div class="block__content block__content--1 pad-t-1 pad-b-1 block__content--active">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block__content block__content--2 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__content block__content--3 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block__content block__content--4 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ////////////// blocks ////////////// -->
+      <section class="block mar-t-1" id="serials">
+        <h2 class="block__header pad-t-1 pad-b-05">Serials</h2>
+        <div class="block__tab-container">
+          <button class="btn block__tab block__tab--5 block__tab--active" data-tab="5">
+            Action
+          </button>
+          <button class="btn block__tab block__tab--6" data-tab="6">
+            Adventure
+          </button>
+          <button class="btn block__tab block__tab--7" data-tab="7">
+            Drama
+          </button>
+        </div>
+
+        <div class="block__content block__content--5 pad-t-1 pad-b-1 block__content--active">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block__content block__content--6 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__content block__content--7 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <!-- ////////////// blocks ////////////// -->
+      <section class="block mar-t-1" id="movies">
+        <h2 class="block__header pad-t-1 pad-b-05">Movies</h2>
+        <div class="block__tab-container">
+          <button class="btn block__tab block__tab--8 block__tab--active" data-tab="8">
+            Action
+          </button>
+          <button class="btn block__tab block__tab--9" data-tab="9">
+            Adventure
+          </button>
+          <button class="btn block__tab block__tab--10" data-tab="10">
+            Drama
+          </button>
+          <button class="btn block__tab block__tab--11" data-tab="11">
+            Comedy
+          </button>
+        </div>
+
+        <div class="block__content block__content--8 pad-t-1 pad-b-1 block__content--active">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block__content block__content--9 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__content block__content--10 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block__content block__content--11 pad-t-1 pad-b-1 ">
+          <!-- ////////////// block Row ////////////// -->
+          <div class="block__row">
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-04.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Prison Break - Season 5</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.4</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-05.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Black - Season 6</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-06.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">25th Hour</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2002</span>
+                <span><i class="fas fa-star"></i> 8.8</span>
+              </div>
+            </div>
+            <!-- ////////////// block Item ////////////// -->
+            <div class="block__item pad-t-1 pad-b-1">
+              <a href="#"> <img src="img/sample-img-03.jpg" alt="" /></a>
+              <div class="block__item__title">
+                <h6 class="pad-t-05"><a href="#">Lucifer - Season 2</a></h6>
+              </div>
+              <div class="block__item__info pad-t-05">
+                <span>2019</span>
+                <span><i class="fas fa-star"></i> 7.8</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ////////////// Footer ////////////// -->
+  <footer class="mar-t-2">
+    <div class="container">
+
+
+      <div class="footer__top pad-t-2 pad-b-05">
+        <h2 class="footer__brand"><a href="/">M</a></h2>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__bottom pad-b-1 pad-t-1" id="subscribe">
+
+        <div class="footer__sub pad-t-1">
+          <form action="/sub.php">
+            <input class="footer__sub__text" type="text" placeholder="Type an Email..." name="email">
+            <button class="footer__sub__btn btn--lighter mar-t-1 mar-b-1" type="submit"><i
+                class="fas fa-check-square"></i>Subscribe</button>
+          </form>
+        </div>
+
+        <p class="footer__bottom__caption mar-t-1 pad-t-1">&copy; 2020, Sergi J. All rights reserved.</p>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+
+</html>

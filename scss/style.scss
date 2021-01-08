@@ -1,0 +1,723 @@
+/*
+
+Author: Sergi. J
+Date:Dec, 2020
+
+*/
+
+@import "./reset";
+@import "./base";
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+////////////////////////////////////////////////////////
+/* Global start */
+////////////////////////////////////////////////////////
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 10px;
+  font-family: "Source Sans Pro", Verdana, Tahoma, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: $white;
+  background: $primary;
+}
+
+////////////////////////////////////////////////////////
+/* List */
+////////////////////////////////////////////////////////
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+////////////////////////////////////////////////////////
+/* Images */
+////////////////////////////////////////////////////////
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+////////////////////////////////////////////////////////
+/* Typography */
+////////////////////////////////////////////////////////
+
+a {
+  color: $primary;
+}
+
+a:link,
+a:active,
+a:visited,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: $white;
+}
+
+a:active,
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3.1rem;
+}
+
+h4 {
+  font-size: 2.9rem;
+}
+
+h5 {
+  font-size: 2.6rem;
+}
+
+h6 {
+  font-size: 2.2rem;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+////////////////////////////////////////////////////////
+/* Container */
+////////////////////////////////////////////////////////
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+////////////////////////////////////////////////////////
+/* Header */
+////////////////////////////////////////////////////////
+
+header {
+  height: 80rem;
+  background: url("../img/bg.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+////////////////////////////////////////////////////////
+/* Buttons */
+////////////////////////////////////////////////////////
+
+.tag {
+  padding: 0.2em 0.5em;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.tag + .tag {
+  margin-left: 0.4em;
+}
+
+.tag--color-1 {
+  background: $tertiary;
+}
+
+.tag--color-2 {
+  background: $quaternary;
+}
+.tag--color-3 {
+  background: $quinary;
+}
+
+.btn {
+  padding: 0.8em 1.3em;
+  font-size: 1.4rem;
+  color: $white;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 230ms ease-in;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn > * {
+  padding-right: 0.5em;
+}
+
+.btn:hover,
+.btn:focus {
+  text-decoration: none;
+}
+
+.btn--lighter {
+  background: $secondary-darker;
+}
+.btn--lighter:hover,
+.btn--lighter:focus {
+  background: $secondary;
+}
+
+.btn--light {
+  background: $primary;
+}
+.btn--light:hover,
+.btn--light:focus {
+  background: $secondary;
+}
+
+.btn--dark {
+  background: $black;
+}
+.btn--dark:hover,
+.btn--dark:focus {
+  background: $black-darker;
+}
+
+.nav__ham-btn,
+.nav__search-btn {
+  z-index: 2000;
+  background: $black-darker;
+  border: 0;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  font-size: 3rem;
+  color: inherit;
+  opacity: 0.6;
+  transition: all 250ms ease-in;
+}
+
+////////////////////////////////////////////////////////
+/* Nav */
+////////////////////////////////////////////////////////
+
+.nav {
+  @include flexRowSpaceBetween;
+  position: relative;
+  padding: 1.5em 0;
+  height: 10rem;
+}
+
+.nav__ham-btn {
+  z-index: 2000;
+}
+
+.nav__menu {
+  @include flexColumnSpaceAround;
+  padding: 1em 0;
+  position: absolute;
+  z-index: 1999;
+  width: 100%;
+  height: 65rem;
+  left: 0;
+  top: 10rem;
+  background: $primary-darker;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 250ms ease-in;
+}
+
+.nav__menu > * {
+  padding: 0 2em;
+}
+
+.nav__menu--show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: initial;
+}
+
+.nav__menu a {
+  display: inline-block;
+  color: $white;
+  transition: all 250ms ease-in-out;
+  padding: 0.8em 1.2em;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: $secondary;
+}
+
+.nav__menu a:hover,
+.nav__menu a:focus {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: $secondary-darker;
+}
+
+////////////////////////////////////////////////////////
+/* Brand */
+////////////////////////////////////////////////////////
+
+.nav__brand {
+  transition: all 250ms ease-in;
+}
+
+.nav__brand a {
+  @include logoTxt;
+  color: $secondary;
+}
+
+.nav__brand a:hover,
+.nav__brand a:focus {
+  text-decoration: none;
+  color: $secondary-darker;
+}
+
+////////////////////////////////////////////////////////
+/* Search form */
+////////////////////////////////////////////////////////
+
+.nav__search-btn {
+  z-index: 1000;
+}
+
+.nav__search {
+  z-index: 999;
+  transform: translateY(-200%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 250ms ease-in;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 1.2rem;
+}
+
+.nav__search--show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: initial;
+}
+
+.nav__search form {
+  width: 100%;
+}
+
+.nav__search__text {
+  background: transparent;
+  border: 0;
+  padding: 1.9em 7rem 0.8em 0;
+  color: $white;
+  width: 100%;
+}
+
+.nav__search input:-webkit-autofill,
+.nav__search input:-webkit-autofill:hover,
+.nav__search input:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+  box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background-clip: content-box !important;
+}
+
+////////////////////////////////////////////////////////
+/* Slider */
+////////////////////////////////////////////////////////
+
+.slider {
+  height: 70rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 450ms ease-in;
+}
+
+.slide__movie {
+  position: relative;
+}
+.slide__movie__btns {
+  position: absolute;
+  top: 1.5rem;
+  z-index: 999;
+  @include flexRowSpaceBetween;
+  padding: 0 0.8em;
+  width: 100%;
+}
+.slide__movie__caption {
+  padding: 1.5em 1em;
+  text-align: center;
+  background: $gradient;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  bottom: 0;
+}
+
+.slide__movie__caption p {
+  padding: 1.2em;
+}
+
+.slide__movie__tags {
+  padding: 0.5em 0;
+}
+
+.slide__movie__tags a:hover,
+.slide__movie__tags a:focus {
+  text-decoration: none;
+}
+
+.slide__movie__img img {
+  width: 100vw;
+  height: 100vh;
+  height: 65rem;
+  object-fit: cover;
+  object-position: 50% 0%;
+  filter: brightness(40%);
+}
+
+.slider__btn {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  background: $black;
+  padding: 0.6em;
+  font-size: 2.8rem;
+  border: 0;
+  color: $white;
+  z-index: 999;
+  cursor: pointer;
+  transition: all 230ms ease-in;
+}
+
+.slider__btn:hover {
+  background: $black-darker;
+}
+
+.slider__btn--left {
+  left: 1.5rem;
+}
+
+.slider__btn--right {
+  right: 1.5rem;
+}
+
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots__dot {
+  border: none;
+  background-color: $white;
+  opacity: 0.7;
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  background-color: $secondary;
+  opacity: 1;
+}
+
+////////////////////////////////////////////////////////
+/* Tabbed Movies */
+////////////////////////////////////////////////////////
+
+.block__header {
+  text-align: center;
+}
+
+.block__tab-container {
+  @include flexRowWrap;
+}
+.block__tab-container > * + * {
+  margin-left: 1em;
+}
+
+.block__tab {
+  border: 0;
+  background: $black;
+  cursor: pointer;
+  margin-top: 1.5em;
+  transition: all 320ms ease-in-out;
+}
+
+.block__tab:hover {
+  background: $black-darker;
+}
+
+.block__tab--active,
+.block__tab--active:hover {
+  background: $secondary;
+}
+
+.block__content {
+  display: none;
+}
+
+.block__content--active {
+  display: block;
+}
+
+.block__row {
+  @include flexRowWrap;
+  margin: 0 -1em;
+}
+
+.block__item {
+  padding: 0 1em;
+  @include flexCol-12;
+  display: flex;
+  flex-direction: column;
+}
+
+.block__item img {
+  width: 100vw;
+  height: 26rem;
+  object-fit: cover;
+  object-position: 50% 0%;
+  transition: opacity 150ms ease-in-out;
+  opacity: 0.7;
+}
+
+.block__item img:hover,
+.block__item img:focus {
+  opacity: 1;
+}
+
+.block__item__title {
+  flex-grow: 1;
+}
+
+.block__item__info {
+  @include flexRowSpaceBetween;
+  font-size: 1.6rem;
+  color: $white-darker;
+}
+
+.block__item__info i {
+  color: $quaternary;
+  margin-right: 0.2em;
+}
+
+////////////////////////////////////////////////////////
+/* Footer */
+////////////////////////////////////////////////////////
+
+footer {
+  background-color: $primary-darker;
+  color: $white-darker;
+}
+
+.footer__top {
+  @include flexRowSpaceBetween;
+}
+
+.footer__top ul {
+  display: flex;
+}
+
+.footer__top ul > * + * {
+  margin-left: 0.5em;
+}
+
+.footer__brand a {
+  @include logoTxt;
+  color: $white-darker;
+}
+
+.footer__top ul a {
+  font-size: 2.5rem;
+  color: $white-darker;
+  transition: all 230ms ease-in;
+}
+
+.footer__top ul a:hover,
+.footer__top ul a:focus,
+.footer__brand a:hover,
+.footer__brand a:focus {
+  text-decoration: none;
+  color: $white;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__bottom__caption {
+  border-top: 1px $primary-lighter dashed;
+  text-align: center;
+}
+
+.footer__sub {
+  text-align: center;
+  border-top: 1px $primary-lighter dashed;
+}
+
+.footer__sub__text {
+  background: $primary;
+  border: 0;
+  color: $white;
+  padding: 0.5em 0.7em;
+  width: 100%;
+}
+
+.footer__sub__btn {
+  border: 0;
+  padding: 0.5em 0.7em;
+  color: $white;
+  cursor: pointer;
+  transition: all 230ms ease-in;
+}
+
+.footer__sub__btn > *:first-child {
+  margin-right: 0.5em;
+}
+
+.footer__sub__text:focus {
+  background: $primary-lighter;
+}
+
+////////////////////////////////////////////////////////
+/* Utilities */
+////////////////////////////////////////////////////////
+
+.invisible {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  opacity: 1;
+}
+
+.passive {
+  opacity: 0.2;
+}
+
+/* Margins & Paddings */
+
+.mar-t-05 {
+  margin-top: 0.5em;
+}
+
+.mar-b-05 {
+  margin-bottom: 0.5em;
+}
+
+.mar-t-2 {
+  margin-top: 2em;
+}
+
+.mar-t-1 {
+  margin-top: 1em;
+}
+
+.mar-b-2 {
+  margin-bottom: 2em;
+}
+
+.mar-b-1 {
+  margin-bottom: 1em;
+}
+
+.pad-b-05 {
+  padding-bottom: 0.5em;
+}
+
+.pad-t-05 {
+  padding-top: 0.5em;
+}
+
+.pad-b-1 {
+  padding-bottom: 1em;
+}
+
+.pad-t-1 {
+  padding-top: 1em;
+}
+
+.pad-b-2 {
+  padding-bottom: 2em;
+}
+
+.pad-t-2 {
+  padding-top: 2em;
+}
+
+////////////////////////////////////////////////////////
+/* Media Queries */
+////////////////////////////////////////////////////////
+
+@media screen and (min-width: 440px) {
+  .block__item {
+    @include flexCol-6;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .block__item {
+    @include flexCol-3;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .block__item {
+    @include flexCol-4;
+  }
+}
