@@ -332,12 +332,25 @@ p {
   margin: 0;
 }
 
-/* Container */
+/* Container & Sections */
 .container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2em;
+}
+
+section {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
 }
 
 /* Header */

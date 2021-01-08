@@ -34,6 +34,27 @@ const tabsContainer = document.querySelectorAll(".block__tab-container");
 const tabsContent = document.querySelectorAll(".block__content");
 
 ////////////////////////////////////////////////////////
+// Reveal Sections When Scrolling
+////////////////////////////////////////////////////////
+
+const allSec = document.querySelectorAll("section");
+
+const revealSec = function (entries, observer) {
+  const [entry] = entries;
+  if (entry.isIntersecting) entry.target.classList.remove("section--hidden");
+};
+
+const secObserver = new IntersectionObserver(revealSec, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSec.forEach(function (sec) {
+  secObserver.observe(sec);
+  sec.classList.add("section--hidden");
+});
+
+////////////////////////////////////////////////////////
 // Hamurger Menu
 ////////////////////////////////////////////////////////
 
