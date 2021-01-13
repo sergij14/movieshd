@@ -116,6 +116,8 @@ const slider = function () {
   const dotContainer = document.querySelector(".dots");
 
   let curSlide = 0;
+  let touchendX = 0;
+  let touchstartX = 0;
   const maxSlide = slides.length;
 
   const createDots = function () {
@@ -164,12 +166,17 @@ const slider = function () {
     activateDot(curSlide);
   };
 
+  const handleGesture = function () {
+    if (touchendX < touchstartX) nextSlide();
+    if (touchendX > touchstartX) prevSlide();
+  };
+
   const init = function () {
     goToSlide(0);
     createDots();
-
     activateDot(0);
   };
+
   init();
 
   btnRight.addEventListener("click", nextSlide);
@@ -178,6 +185,16 @@ const slider = function () {
   document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") prevSlide();
     e.key === "ArrowRight" && nextSlide();
+  });
+
+  sliderContainer.addEventListener(
+    "touchstart",
+    (e) => (touchstartX = e.changedTouches[0].screenX)
+  );
+
+  sliderContainer.addEventListener("touchend", (e) => {
+    touchendX = e.changedTouches[0].screenX;
+    handleGesture();
   });
 
   dotContainer.addEventListener("click", function (e) {

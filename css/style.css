@@ -606,8 +606,8 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  -webkit-transition: all 450ms ease-in;
-  transition: all 450ms ease-in;
+  -webkit-transition: all 240ms ease-in;
+  transition: all 240ms ease-in;
 }
 
 .slide__movie {
