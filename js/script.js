@@ -1,3 +1,5 @@
+import "core-js/stable";
+
 //
 
 // Author: Sergi. J
@@ -5,7 +7,7 @@
 
 //
 
-"use strict";
+("use strict");
 
 ////////////////////////////////////////////////////////
 // Selecting
